@@ -1,0 +1,27 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+  - file: pages/_Lab
+  - file: pages/_Prosjektrapport_tilbakemeldinger
+  - file: pages/_Prosjektrapport
+  - file: pages/AFM-Atomic_Force_Microscopy
+  - file: pages/BSE-Backscatter_Elektron
+  - file: pages/Elektronmikroskopiens_begrensinger
+  - file: pages/FIB-Focused_Ion_Beam
+  - file: pages/Inelastisk_og_elastisk_spredning
+  - file: pages/Intro
+  - file: pages/Konvergensvinkel_dybdeskarphet_arbeidsavstand_EBSD
+  - file: pages/Mikroskopi
+  - file: pages/Nye_detektorer
+  - file: pages/SE-Sekundaerelektroner
+  - file: pages/SEM-_Scanne_Elektron_Mikroskop
+  - file: pages/SEM-EDS-Energy_Dispersive_X-ray_Spectroscopy
+  - file: pages/SEM-Semmens_oppbygging
+  - file: pages/SPM-_Scanning_Probe_Microscopy
+  - file: pages/STEM-_Scanne_Transmisjons_Elektron_Mikroskopi
+  - file: pages/STEM-Inelastiske_Signaler
+  - file: pages/TEM-_Transmission_Electron_Microscope
+  - file: pages/TEM-In_Situ
