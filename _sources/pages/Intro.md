@@ -1,4 +1,6 @@
-# NanoTools
+# Velkommen til NanoTools
+
+## Hvilke nanoverktøy finnes?
 
   - **FIB (Focused Ion Beam)**
   - **SEM (Scanning Electron Microscope)**

@@ -1,3 +1,5 @@
+# Inelastiske signaler
+
 Elastiske signaler:
 - Z-kontrast (HAADF)
 - Diffraksjon

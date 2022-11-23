@@ -1,3 +1,5 @@
+# Nye detektorer
+
 ![detektorer|300](https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Direct_and_indirect_electron_detectors.svg/800px-Direct_and_indirect_electron_detectors.svg.png)
 - Gammel - Indirekte detektor
 	- Tregt
