@@ -1,0 +1,761 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>SEMmens oppbygging &#8212; Kompendium Tools</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Kompendium Tools</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Introduksjon
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="_Lab.html">
+   Lab
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="_Prosjektrapport_tilbakemeldinger.html">
+   Vag introduksjon
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="_Prosjektrapport.html">
+   Prosjektrapport
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AFM-Atomic_Force_Microscopy.html">
+   AFM
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="BSE-Backscatter_Elektron.html">
+   Backscatter (BSE)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Elektronmikroskopiens_begrensinger.html">
+   Begrensinger
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="FIB-Focused_Ion_Beam.html">
+   FIB
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Inelastisk_og_elastisk_spredning.html">
+   Inelastisk og elastisk spredning
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Intro.html">
+   NanoTools
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Konvergensvinkel_dybdeskarphet_arbeidsavstand_EBSD.html">
+   Konvergensvinkel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Mikroskopi.html">
+   Hva er mikroskopi?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="SE-Sekundaerelektroner.html">
+   Sekundærelektroner
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="SEM-_Scanne_Elektron_Mikroskop.html">
+   SEM
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="SEM-EDS-Energy_Dispersive_X-ray_Spectroscopy.html">
+   Røntgen, karakteristisk
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="SPM-_Scanning_Probe_Microscopy.html">
+   Prototype: Scanning tunneling mikroskopi STM
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="STEM-_Scanne_Transmisjons_Elektron_Mikroskopi.html">
+   STEM
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="TEM-_Transmission_Electron_Microscope.html">
+   To moduser
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fpages/SEM-Semmens_oppbyggning.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/pages/SEM-Semmens_oppbyggning.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#oppbyggning-av-sem">
+   Oppbyggning av SEM
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#elektronkanon">
+   Elektronkanon
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#egenskaper-til-elektronkanon">
+     Egenskaper til elektronkanon
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#typer-elektronkanoner">
+     Typer elektronkanoner
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#em-linser">
+   EM-Linser
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#aberrasjoner">
+     Aberrasjoner
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#sfaeriske-aberrasjoner">
+       Sfæriske aberrasjoner
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#kromatiske-aberrasjoner">
+       Kromatiske aberrasjoner
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#kondensor-linse-systemet">
+   Kondensor(linse)systemet
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#aperturer">
+     Aperturer
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>SEMmens oppbygging</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#oppbyggning-av-sem">
+   Oppbyggning av SEM
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#elektronkanon">
+   Elektronkanon
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#egenskaper-til-elektronkanon">
+     Egenskaper til elektronkanon
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#typer-elektronkanoner">
+     Typer elektronkanoner
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#em-linser">
+   EM-Linser
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#aberrasjoner">
+     Aberrasjoner
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#sfaeriske-aberrasjoner">
+       Sfæriske aberrasjoner
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#kromatiske-aberrasjoner">
+       Kromatiske aberrasjoner
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#kondensor-linse-systemet">
+   Kondensor(linse)systemet
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#aperturer">
+     Aperturer
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <p>[[SEM - _Scanne Elektron Mikroskop]]</p>
+<section class="tex2jax_ignore mathjax_ignore" id="semmens-oppbygging">
+<h1>SEMmens oppbygging<a class="headerlink" href="#semmens-oppbygging" title="Permalink to this headline">#</a></h1>
+<ul class="simple">
+<li><p>Elektronkanon</p></li>
+<li><p>Elektromagnetiske linser</p>
+<ul>
+<li><p>Aberrasjoner</p></li>
+</ul>
+</li>
+<li><p>Kondensorsystemet</p></li>
+</ul>
+<section id="oppbyggning-av-sem">
+<h2>Oppbyggning av SEM<a class="headerlink" href="#oppbyggning-av-sem" title="Permalink to this headline">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>     <span class="n">V</span>         <span class="o">-</span> <span class="n">elektronkanon</span>
+<span class="o">|</span>         <span class="o">|</span>    <span class="o">-</span> <span class="n">linser</span>
+<span class="o">|</span>         <span class="o">|</span>    <span class="o">/</span>
+
+   <span class="n">_____</span>       <span class="o">-</span> <span class="n">prøveholder</span>
+     <span class="o">|</span> 
+</pre></div>
+</div>
+</section>
+<section id="elektronkanon">
+<h2>Elektronkanon<a class="headerlink" href="#elektronkanon" title="Permalink to this headline">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>		 <span class="n">__</span>
+		<span class="o">|</span>  <span class="o">|</span>
+		<span class="o">|</span>  <span class="o">|</span>  
+		\  <span class="o">/</span> <span class="o">-</span> <span class="n">Field</span> <span class="n">emission</span> <span class="n">gun</span>
+		 \<span class="o">/</span>  <span class="o">-</span> <span class="n">Skarp</span> <span class="n">tupp</span>
+	<span class="n">____</span>    <span class="n">______</span>
+	<span class="n">___</span><span class="o">/</span>	\<span class="n">____</span>  <span class="o">-</span> <span class="n">Anode</span> <span class="mi">1</span>
+	<span class="n">____</span>     <span class="n">_____</span> 
+    <span class="n">___</span><span class="o">|</span>    <span class="o">|</span><span class="n">____</span>  <span class="o">-</span> <span class="n">Anode</span> <span class="mi">2</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Varmer opp tuppen -&gt; 1700 K</p></li>
+<li><p>4kV mellom Anode 1 og tupp</p>
+<ul>
+<li><p>Trekker elektroner ut av tuppen</p></li>
+</ul>
+</li>
+<li><p>Anode 2 og tupp</p>
+<ul>
+<li><p>200 kV mellom Anode 2 og tupp for TEM</p></li>
+<li><p>5 kV mellom Anode 2 og tupp for SEM</p></li>
+<li><p>Akselererer elektroner</p></li>
+</ul>
+</li>
+<li><p>Optiske aksen</p>
+<ul>
+<li><p>Linje som går gjennom hele mikroskopet</p></li>
+</ul>
+</li>
+</ul>
+<section id="egenskaper-til-elektronkanon">
+<h3>Egenskaper til elektronkanon<a class="headerlink" href="#egenskaper-til-elektronkanon" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Elektron-strøm</p>
+<ul>
+<li><p>Så mange elektroner som mulig</p></li>
+</ul>
+</li>
+<li><p>Virtuell størrelse</p>
+<ul>
+<li><p>Hvor stor er tuppen???</p></li>
+</ul>
+</li>
+<li><p>Energispredning</p>
+<ul>
+<li><p>Hvor stor variasjon er det i den kinetiske energien til elektronene som skytes ut?</p></li>
+<li><p>1 eV spredning er MYE</p></li>
+<li><p>0.3 eV spredning er bra :)</p></li>
+<li><p>Dette kommer av kromatiske aberrasjoner</p></li>
+</ul>
+</li>
+<li><p>Vakuum</p>
+<ul>
+<li><p>Hvor mye vakuum trenger den for å virke?</p></li>
+</ul>
+</li>
+<li><p>Pris &amp; levetid</p></li>
+<li><p>Temperatur</p>
+<ul>
+<li><p>Høy temperatur gjør at den tåler mer kontaminering fordi det brennes bort</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="typer-elektronkanoner">
+<h3>Typer elektronkanoner<a class="headerlink" href="#typer-elektronkanoner" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>LaB6</p>
+<ul>
+<li><p>Billig - 10 000 kr</p></li>
+<li><p>Tåler dårlig vakuum <span class="math notranslate nohighlight">\(10^{-4}\rightarrow 10^{-6} Pa\)</span></p></li>
+<li><p>Størrelse 10 000 nm</p></li>
+<li><p>Energispredning <span class="math notranslate nohighlight">\(\Delta E \Rightarrow 1.5 eV\)</span></p></li>
+<li><p>Temperatur <span class="math notranslate nohighlight">\(T = 1700K\)</span></p></li>
+</ul>
+</li>
+<li><p>Schottky Field Emission Gun (FEG)</p>
+<ul>
+<li><p>Dyrere - 100 000 kr (i TEM)</p></li>
+<li><p>Vakuum <span class="math notranslate nohighlight">\(10^{-7} Pa\)</span></p></li>
+<li><p>Størrelse 15 nm</p></li>
+<li><p>Energispredning <span class="math notranslate nohighlight">\(\Delta E \Rightarrow 0.7 eV\)</span></p></li>
+<li><p>Temperatur <span class="math notranslate nohighlight">\(T = 1700 K\)</span></p></li>
+<li><p>FEG SEM = FLEX</p></li>
+</ul>
+</li>
+<li><p>Cold FEG</p>
+<ul>
+<li><p>Kjemipedyrt (for TEM - millioner)</p></li>
+<li><p>Vakuum <span class="math notranslate nohighlight">\(10^{-8} Pa\)</span></p></li>
+<li><p>Størrelse 3 nm</p></li>
+<li><p>Ekstremt presis energispredning <span class="math notranslate nohighlight">\(\Delta E = 0.3 eV\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(T = 300K\)</span></p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="em-linser">
+<h2>EM-Linser<a class="headerlink" href="#em-linser" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Lage et magnetfelt</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(2 - 3 T\)</span> som er veldig mye</p></li>
+</ul>
+</li>
+<li><p>Lorentz-kraften</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(\vec{F} = -e(\vec{E}+\vec{v} \times \vec{B})\)</span>
+<span class="math notranslate nohighlight">\(=-e\vec{v} \times \vec{B}\)</span></p></li>
+<li><p>Kontrollere styrken ved å endre strømmen</p></li>
+</ul>
+</li>
+</ul>
+<section id="aberrasjoner">
+<h3>Aberrasjoner<a class="headerlink" href="#aberrasjoner" title="Permalink to this headline">#</a></h3>
+<p>EM-Linser er dritt</p>
+<ul class="simple">
+<li><p>Typisk vinkel er <span class="math notranslate nohighlight">\(10 mrad\)</span>, milli-radianer, som tilsvarer <span class="math notranslate nohighlight">\(=0.57 ^o\)</span></p></li>
+<li><p>Det finnes bare konvekse linser 😭</p></li>
+<li><p>Linsene er ikke perfekte, dvs de har aberrasjoner. Det finnes flere typer aberrasjoner</p></li>
+</ul>
+<section id="sfaeriske-aberrasjoner">
+<h4>Sfæriske aberrasjoner<a class="headerlink" href="#sfaeriske-aberrasjoner" title="Permalink to this headline">#</a></h4>
+<p>Treffer ikke fokuspunktet, men et større fokusområde.<br />
+Elektronene som kommer fra forskjellige vinkler fra det samme punktet møtes ikke på samme punkt.<br />
+Konsekvensen er at elektronproben blir større.</p>
+</section>
+<section id="kromatiske-aberrasjoner">
+<h4>Kromatiske aberrasjoner<a class="headerlink" href="#kromatiske-aberrasjoner" title="Permalink to this headline">#</a></h4>
+<p>Linsa bøyer elektroner med forskjellig energi forskjellig.<br />
+Konsekvensen er igjen at elektronproben blir større.<br />
+Derfor vil folk ha ColdFEG 😳</p>
+</section>
+</section>
+</section>
+<section id="kondensor-linse-systemet">
+<h2>Kondensor(linse)systemet<a class="headerlink" href="#kondensor-linse-systemet" title="Permalink to this headline">#</a></h2>
+<p>Gjøre <span class="math notranslate nohighlight">\(e^-\)</span> proben så liten som mulig<br />
+Forminsker bildet av elektronkanon-tuppen ved å sette på sterke linser som trekker bildet lengre unna. Problemet med dette er at en mindre andel av elektronene treffer neste linse og dermed prøven.</p>
+<section id="aperturer">
+<h3>Aperturer<a class="headerlink" href="#aperturer" title="Permalink to this headline">#</a></h3>
+<p>Aberrasjoner suger
+Men aberrasjoner er proporsjonale med avstand til den optiske akse, dermed kan vi sette inn aperturer som blokkerer de dårlige elektronene. Det er elektronene som er lengst unna den optiske akse som er dårligst.
+Men 😢: mindre aperture -&gt;</p>
+<ul class="simple">
+<li><p>Færre elektroner</p></li>
+<li><p>Mer parallell stråle</p></li>
+<li><p>Mindre effekt av aberrasjoner 🎉</p></li>
+<li><p>Rayleigh criterion 😡:</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(\delta = \frac{0.61\lambda}{NA}\)</span> der <span class="math notranslate nohighlight">\(NA\)</span> er numerical aperture</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./pages"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Iver Småge<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
