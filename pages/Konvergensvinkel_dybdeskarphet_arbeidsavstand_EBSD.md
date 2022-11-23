@@ -1,5 +1,6 @@
-Viktig tema innen [[SEM - _Scanne Elektron Mikroskop]]
 # Konvergensvinkel
+
+Viktig tema innen [[SEM - _Scanne Elektron Mikroskop]]
 
 Konvergensvinkelen $\alpha$  er vinkelen mellom den optiske aksen og den ytre del av elektronprobe-kjeglen
 
