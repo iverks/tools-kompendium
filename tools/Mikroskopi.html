@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>In situ &#8212; Kompendium Tools</title>
+    <title>Hva er mikroskopi? &#8212; Kompendium Tools</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -50,10 +50,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Lab" href="_Lab.html" />
-    <link rel="prev" title="To moduser" href="TEM-_Transmission_Electron_Microscope.html" />
+    <link rel="next" title="Nye detektorer" href="Nye_detektorer.html" />
+    <link rel="prev" title="Konvergensvinkel" href="Konvergensvinkel_dybdeskarphet_arbeidsavstand_EBSD.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -149,8 +151,8 @@ const thebe_selector_output = ".output, .cell_output"
    Konvergensvinkel
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Mikroskopi.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Hva er mikroskopi?
   </a>
  </li>
@@ -199,8 +201,8 @@ const thebe_selector_output = ".output, .cell_output"
    To moduser
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="TEM-In_situ.html">
    In situ
   </a>
  </li>
@@ -309,7 +311,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fpages/TEM-In_situ.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Ftools/Mikroskopi.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -337,7 +339,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/pages/TEM-In_situ.md"
+        <a href="../_sources/tools/Mikroskopi.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -374,23 +376,84 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#opplosning">
+   Oppløsning
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dette-betyr">
+     Dette betyr
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#de-broglie-sier-at">
+     De broglie sier at
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>In situ</h1>
+                <h1>Hva er mikroskopi?</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#opplosning">
+   Oppløsning
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dette-betyr">
+     Dette betyr
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#de-broglie-sier-at">
+     De broglie sier at
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -398,17 +461,33 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="in-situ">
-<h1>In situ<a class="headerlink" href="#in-situ" title="Permalink to this headline">#</a></h1>
-<p>In situ er å påføre ekstern stimuli på prøven. Dete kan være</p>
-<ul class="simple">
-<li><p>Oppvarming</p></li>
-<li><p>Nedkjøling</p></li>
-<li><p>Væske</p></li>
-<li><p>Gass</p></li>
-<li><p>Strøm</p></li>
-</ul>
-<p><img alt="In situ tem|400" src="https://crozier.engineering.asu.edu/wp-content/uploads/2013/11/Operando-Diagram.png" /></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="hva-er-mikroskopi">
+<h1>Hva er mikroskopi?<a class="headerlink" href="#hva-er-mikroskopi" title="Permalink to this headline">#</a></h1>
+<section id="opplosning">
+<h2>Oppløsning<a class="headerlink" href="#opplosning" title="Permalink to this headline">#</a></h2>
+<p>Hvis vi har to (små) objekter så kan vi skille de fra hverandre, men hvis de går veldig nærme hverandre så klarer vi ikke å skille dem fra hverandre.</p>
+<p>Dette er <em>Rayleigh Criteria</em></p>
+<p>def oppløsning <span class="math notranslate nohighlight">\(\delta\)</span>:
+$<span class="math notranslate nohighlight">\(
+\delta \approx 0.6l\cdot\lambda
+\)</span>$</p>
+<p>Der delta er den minste avstanden mellom to objekter som vi kan skille fra hverandre (sett in figur)</p>
+<section id="dette-betyr">
+<h3>Dette betyr<a class="headerlink" href="#dette-betyr" title="Permalink to this headline">#</a></h3>
+<p>Grønt lys har bølgelengde <span class="math notranslate nohighlight">\(\lambda \approx550nm\)</span> <span class="math notranslate nohighlight">\(\rightarrow\delta\approx300nm\)</span>
+Atomer er  <span class="math notranslate nohighlight">\(\approx1nm\)</span>
+Dermed kan vi ikke bruke grønt lys til å se på atomer.</p>
+</section>
+<section id="de-broglie-sier-at">
+<h3>De broglie sier at<a class="headerlink" href="#de-broglie-sier-at" title="Permalink to this headline">#</a></h3>
+<div class="math notranslate nohighlight">
+\[
+\lambda = \frac{h}{mv}
+\]</div>
+<p>der <span class="math notranslate nohighlight">\(\lambda\)</span> er bølgelengden til en partikkel med massen <span class="math notranslate nohighlight">\(m\)</span> og farten <span class="math notranslate nohighlight">\(v\)</span> og <span class="math notranslate nohighlight">\(h\)</span> er Planck-konstanten <span class="math notranslate nohighlight">\(6.63\cdot10^{-34}\)</span>.</p>
+<p>Tung og rask partikkel gir bedre oppløsning!!!</p>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -424,7 +503,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./pages"
+            path: "./tools"
         },
         predefinedOutput: true
     }
@@ -438,17 +517,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="TEM-_Transmission_Electron_Microscope.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="Konvergensvinkel_dybdeskarphet_arbeidsavstand_EBSD.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">To moduser</p>
+            <p class="prev-next-title">Konvergensvinkel</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="_Lab.html" title="next page">
+    <a class='right-next' id="next-link" href="Nye_detektorer.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Lab</p>
+        <p class="prev-next-title">Nye detektorer</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

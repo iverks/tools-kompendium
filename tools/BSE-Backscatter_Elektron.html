@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Inelastiske signaler &#8212; Kompendium Tools</title>
+    <title>Backscatter (BSE) &#8212; Kompendium Tools</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -54,8 +54,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="To moduser" href="TEM-_Transmission_Electron_Microscope.html" />
-    <link rel="prev" title="STEM" href="STEM-_Scanne_Transmisjons_Elektron_Mikroskopi.html" />
+    <link rel="next" title="Begrensinger" href="Elektronmikroskopiens_begrensinger.html" />
+    <link rel="prev" title="AFM" href="AFM-Atomic_Force_Microscopy.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -126,8 +126,8 @@ const thebe_selector_output = ".output, .cell_output"
    AFM
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="BSE-Backscatter_Elektron.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Backscatter (BSE)
   </a>
  </li>
@@ -191,8 +191,8 @@ const thebe_selector_output = ".output, .cell_output"
    STEM
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="STEM-Inelastiske_signaler.html">
    Inelastiske signaler
   </a>
  </li>
@@ -311,7 +311,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fpages/STEM-Inelastiske_signaler.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Ftools/BSE-Backscatter_Elektron.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -339,7 +339,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/pages/STEM-Inelastiske_signaler.md"
+        <a href="../_sources/tools/BSE-Backscatter_Elektron.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -399,40 +399,21 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#eds-energy-dispersive-x-ray-spectroscopy">
-   EDS - Energy Dispersive x-ray Spectroscopy
+  <a class="reference internal nav-link" href="#interaksjonsvolum-og-atomnummer-z">
+   Interaksjonsvolum og atomnummer
+   <span class="math notranslate nohighlight">
+    \(Z\)
+   </span>
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#eels-electron-energy-loss-spectroscopy">
-   EELS - Electron Energy Loss Spectroscopy
+  <a class="reference internal nav-link" href="#backscatter-opplosning">
+   Backscatter oppløsning
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#zero-loss-peak-zlp">
-     Zero loss peak (ZLP)
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#plasmon-peaks">
-     Plasmon peaks
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#bandgap">
-     Båndgap
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#core-loss-high-loss">
-     Core loss (High loss)
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#eds-vs-eels-i-stem">
-   EDS VS EELS i STEM
+  <a class="reference internal nav-link" href="#backscatter-topografi">
+   Backscatter topografi ⛰
   </a>
  </li>
 </ul>
@@ -444,7 +425,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Inelastiske signaler</h1>
+                <h1>Backscatter (BSE)</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -455,40 +436,21 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#eds-energy-dispersive-x-ray-spectroscopy">
-   EDS - Energy Dispersive x-ray Spectroscopy
+  <a class="reference internal nav-link" href="#interaksjonsvolum-og-atomnummer-z">
+   Interaksjonsvolum og atomnummer
+   <span class="math notranslate nohighlight">
+    \(Z\)
+   </span>
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#eels-electron-energy-loss-spectroscopy">
-   EELS - Electron Energy Loss Spectroscopy
+  <a class="reference internal nav-link" href="#backscatter-opplosning">
+   Backscatter oppløsning
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#zero-loss-peak-zlp">
-     Zero loss peak (ZLP)
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#plasmon-peaks">
-     Plasmon peaks
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#bandgap">
-     Båndgap
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#core-loss-high-loss">
-     Core loss (High loss)
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#eds-vs-eels-i-stem">
-   EDS VS EELS i STEM
+  <a class="reference internal nav-link" href="#backscatter-topografi">
+   Backscatter topografi ⛰
   </a>
  </li>
 </ul>
@@ -501,79 +463,45 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="inelastiske-signaler">
-<h1>Inelastiske signaler<a class="headerlink" href="#inelastiske-signaler" title="Permalink to this headline">#</a></h1>
-<p>Elastiske signaler:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="backscatter-bse">
+<h1>Backscatter (BSE)<a class="headerlink" href="#backscatter-bse" title="Permalink to this headline">#</a></h1>
+<p>En effekt vi utnytter i [[SEM - _Scanne Elektron Mikroskop]]</p>
 <ul class="simple">
-<li><p>Z-kontrast (HAADF)</p></li>
-<li><p>Diffraksjon
-Inelastiske signaler:</p></li>
-<li><p>EDS</p></li>
-<li><p>EELS</p></li>
-</ul>
-<section id="eds-energy-dispersive-x-ray-spectroscopy">
-<h2>EDS - Energy Dispersive x-ray Spectroscopy<a class="headerlink" href="#eds-energy-dispersive-x-ray-spectroscopy" title="Permalink to this headline">#</a></h2>
-<p>Se [[SEM - EDS - Energy Dispersive x-ray Spectroscopy]].<br />
-Fordelen i STEM er at vi har mye mindre interaksjonsvolum.<br />
-Bremsestråling:</p>
-<ul class="simple">
-<li><p>Deakselerering av <span class="math notranslate nohighlight">\(e^-\)</span> inne i materialet.</p></li>
-<li><p>Ses på som stort sett bare støy i signalet.</p></li>
-</ul>
-</section>
-<section id="eels-electron-energy-loss-spectroscopy">
-<h2>EELS - Electron Energy Loss Spectroscopy<a class="headerlink" href="#eels-electron-energy-loss-spectroscopy" title="Permalink to this headline">#</a></h2>
-<p>Ser på <span class="math notranslate nohighlight">\(e^-\)</span> som mister energi når det går gjennom materialet
-Får ut energitapet som funksjon av probeposision.
-Ligner veldig på EDS, men vi ser på tapet av energi i <span class="math notranslate nohighlight">\(e^-\)</span>-strålen heller enn energien i X-rays.</p>
-<p><img alt="EELS spektrogram | 500" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Electron_energy_loss_spectrum_feature_overview.svg/1920px-Electron_energy_loss_spectrum_feature_overview.svg.png" /></p>
-<section id="zero-loss-peak-zlp">
-<h3>Zero loss peak (ZLP)<a class="headerlink" href="#zero-loss-peak-zlp" title="Permalink to this headline">#</a></h3>
-<p>De elektronene som går rett gjennom prøven 😎<br />
-Ingen energi mistet 💯<br />
-Bredden er på grunn av energispredning i elektronkanonen 🔫</p>
-</section>
-<section id="plasmon-peaks">
-<h3>Plasmon peaks<a class="headerlink" href="#plasmon-peaks" title="Permalink to this headline">#</a></h3>
-</section>
-<section id="bandgap">
-<h3>Båndgap<a class="headerlink" href="#bandgap" title="Permalink to this headline">#</a></h3>
-<p>Kan måle båndgap i materialer.<br />
-Vibrasjoner til atomer</p>
-<ul class="simple">
-<li><p>Phonons</p></li>
-<li><p>“Lyden” av et <span class="math notranslate nohighlight">\(Si\)</span>-atom</p></li>
-</ul>
-</section>
-<section id="core-loss-high-loss">
-<h3>Core loss (High loss)<a class="headerlink" href="#core-loss-high-loss" title="Permalink to this headline">#</a></h3>
-<p><img alt="Core loss spectrogram|500" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Electron_energy_loss_spectroscopy_coreloss_lsmo.svg/1920px-Electron_energy_loss_spectroscopy_coreloss_lsmo.svg.png" /></p>
-<p>Tomme energinivåer er de eneste plassene hvor materialet kan “ta til seg” energi fra elektronene.<br />
-Dette forteller oss veldig mye om orbital- og elektronstrukturen til materialet.<br />
-Forteller også om kjemisk komposisjon.</p>
-</section>
-</section>
-<section id="eds-vs-eels-i-stem">
-<h2>EDS VS EELS i STEM<a class="headerlink" href="#eds-vs-eels-i-stem" title="Permalink to this headline">#</a></h2>
-<ul class="simple">
-<li><p>EDS</p>
+<li><p><span class="math notranslate nohighlight">\(180^o\)</span> sving av <span class="math notranslate nohighlight">\(e^-\)</span></p></li>
+<li><p>Mye energi</p></li>
+<li><p>Elastisk interaksjon</p></li>
+<li><p>Rutheford spredning</p>
 <ul>
-<li><p>Ineffektivt - trenger mange <span class="math notranslate nohighlight">\(e^-\)</span></p></li>
-<li><p>Mindre energioppløsning - Kan ikke se oksidasjonstall</p></li>
-<li><p>Mye lettere å gjøre</p></li>
-<li><p>Vanskelig å se lette grunnstoffer</p></li>
+<li><p>Spredningen skjer på atomkjernen (hokus pokus kvantegreier)</p></li>
 </ul>
 </li>
-<li><p>EELS</p>
-<ul>
-<li><p>Mer effektivt</p></li>
-<li><p>Bedre energioppløsning <span class="math notranslate nohighlight">\(\approx \mu eV\)</span></p></li>
-<li><p>Kan se lette grunnstoffer</p></li>
-<li><p>Vanskelig dataprosessering og teknikk</p></li>
-<li><p>Trenger veldig veldig tynne prøver</p></li>
+<li><p>Spredningstverrsnitt <span class="math notranslate nohighlight">\(\sigma \propto Z^2\)</span> - atomnummer</p></li>
+<li><p>Tyngre atomer gir mer BSE</p></li>
+<li><p>Brukes til å se relativ atomvekt</p></li>
 </ul>
-</li>
-</ul>
+<section id="interaksjonsvolum-og-atomnummer-z">
+<h2>Interaksjonsvolum og atomnummer <span class="math notranslate nohighlight">\(Z\)</span><a class="headerlink" href="#interaksjonsvolum-og-atomnummer-z" title="Permalink to this headline">#</a></h2>
+<div class="math notranslate nohighlight">
+\[
+\sigma \propto Z^2
+\]</div>
+<p>Jo tyngre atomer jo mer spredning, slik som i resten av verden.</p>
+<p>Dette kommer av at <strong>mean free path</strong> blir mindre når atomkjernen blir større. Mean free path er hvor langt et elektron i snitt reiser før det kolliderer med noe.</p>
+</section>
+<section id="backscatter-opplosning">
+<h2>Backscatter oppløsning<a class="headerlink" href="#backscatter-opplosning" title="Permalink to this headline">#</a></h2>
+<p>🏖</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda = \frac{h}{m\cdot v}, \delta \approx 0.61 \lambda
+\]</div>
+<p><span class="math notranslate nohighlight">\(5 kV \implies 6pm\)</span> oppløsning</p>
+</section>
+<section id="backscatter-topografi">
+<h2>Backscatter topografi ⛰<a class="headerlink" href="#backscatter-topografi" title="Permalink to this headline">#</a></h2>
+<p>Elektronene spretter den retningen topografien peker.
+Dette detekterer man og kan bruke til å bestemme prøvens topografi.</p>
+<p>Se figur.</p>
 </section>
 </section>
 
@@ -590,7 +518,7 @@ Forteller også om kjemisk komposisjon.</p>
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./pages"
+            path: "./tools"
         },
         predefinedOutput: true
     }
@@ -604,17 +532,17 @@ Forteller også om kjemisk komposisjon.</p>
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="STEM-_Scanne_Transmisjons_Elektron_Mikroskopi.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="AFM-Atomic_Force_Microscopy.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">STEM</p>
+            <p class="prev-next-title">AFM</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="TEM-_Transmission_Electron_Microscope.html" title="next page">
+    <a class='right-next' id="next-link" href="Elektronmikroskopiens_begrensinger.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">To moduser</p>
+        <p class="prev-next-title">Begrensinger</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

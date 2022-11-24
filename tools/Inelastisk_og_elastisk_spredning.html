@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Sekundærelektroner &#8212; Kompendium Tools</title>
+    <title>Inelastisk og elastisk spredning &#8212; Kompendium Tools</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -54,8 +54,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="SEM" href="SEM-_Scanne_Elektron_Mikroskop.html" />
-    <link rel="prev" title="Nye detektorer" href="Nye_detektorer.html" />
+    <link rel="next" title="Konvergensvinkel" href="Konvergensvinkel_dybdeskarphet_arbeidsavstand_EBSD.html" />
+    <link rel="prev" title="FIB" href="FIB-Focused_Ion_Beam.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -141,8 +141,8 @@ const thebe_selector_output = ".output, .cell_output"
    FIB
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Inelastisk_og_elastisk_spredning.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Inelastisk og elastisk spredning
   </a>
  </li>
@@ -161,8 +161,8 @@ const thebe_selector_output = ".output, .cell_output"
    Nye detektorer
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="SE-Sekundaerelektroner.html">
    Sekundærelektroner
   </a>
  </li>
@@ -311,7 +311,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fpages/SE-Sekundaerelektroner.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Ftools/Inelastisk_og_elastisk_spredning.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -339,7 +339,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/pages/SE-Sekundaerelektroner.md"
+        <a href="../_sources/tools/Inelastisk_og_elastisk_spredning.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -399,18 +399,13 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#hvordan-det-skjer">
-   Hvordan det skjer
+  <a class="reference internal nav-link" href="#inelastisk-spredning">
+   Inelastisk spredning
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#eds-auto-id">
-   EDS - Auto ID
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#opplosning">
-   Oppløsning
+  <a class="reference internal nav-link" href="#elastisk-spredning">
+   Elastisk spredning
   </a>
  </li>
 </ul>
@@ -422,7 +417,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Sekundærelektroner</h1>
+                <h1>Inelastisk og elastisk spredning</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -433,18 +428,13 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#hvordan-det-skjer">
-   Hvordan det skjer
+  <a class="reference internal nav-link" href="#inelastisk-spredning">
+   Inelastisk spredning
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#eds-auto-id">
-   EDS - Auto ID
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#opplosning">
-   Oppløsning
+  <a class="reference internal nav-link" href="#elastisk-spredning">
+   Elastisk spredning
   </a>
  </li>
 </ul>
@@ -457,28 +447,26 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="sekundaerelektroner">
-<h1>Sekundærelektroner<a class="headerlink" href="#sekundaerelektroner" title="Permalink to this headline">#</a></h1>
-<p>Viktig effekt i [[SEM - _Scanne Elektron Mikroskop]]
-Vi tar alltid SE og [[BSE - Backscatter elektron | BSE]] samtidig.</p>
-<p>figur</p>
-<p>Sekundærelektroner har veldig liten energi. <span class="math notranslate nohighlight">\(e_s = 10-50eV &lt;&lt; e_p = 15000eV\)</span>
-Sekundærelektroner som fanges opp kommer derfor fra overflaten, og har veldig liten <strong>mean free path</strong></p>
-<section id="hvordan-det-skjer">
-<h2>Hvordan det skjer<a class="headerlink" href="#hvordan-det-skjer" title="Permalink to this headline">#</a></h2>
-<p>Primærelektroner har masse energi. Når de går inn i materialet eksiterer de masse andre elektroner.</p>
-<p>Vi får bare <span class="math notranslate nohighlight">\(e_s\)</span> fra overflaten fordi sekundærelektronene har så liten <em>Mean Free Path</em></p>
-<p>De har så lite <em>Mean Free Path</em> fordi de har så lite energi.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="inelastisk-og-elastisk-spredning">
+<h1>Inelastisk og elastisk spredning<a class="headerlink" href="#inelastisk-og-elastisk-spredning" title="Permalink to this headline">#</a></h1>
+<p>Viktig effekt i [[SEM - _Scanne Elektron Mikroskop]] og [[TEM - _Transmission Electron Microscope]]</p>
+<section id="inelastisk-spredning">
+<h2>Inelastisk spredning<a class="headerlink" href="#inelastisk-spredning" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Primærelektronene <span class="math notranslate nohighlight">\(e_p\)</span> mister energi</p></li>
+<li><p>[[SE - Sekundærelektroner | Sekundærelektroner]]  <span class="math notranslate nohighlight">\(e^-\)</span></p></li>
+<li><p>Karakteristisk røntgen</p></li>
+<li><p>Kontinuerlig røntge (bremsestråling)</p></li>
+<li><p>Auger elektroner</p></li>
+</ul>
 </section>
-<section id="eds-auto-id">
-<h2>EDS - Auto ID<a class="headerlink" href="#eds-auto-id" title="Permalink to this headline">#</a></h2>
-<p>Suger, ikke stol blindt. Mange artefacts.</p>
-</section>
-<section id="opplosning">
-<h2>Oppløsning<a class="headerlink" href="#opplosning" title="Permalink to this headline">#</a></h2>
-<p>Røntgen kan komme fra dypt i prøven.
-BSE kan bevege seg, og interaksjonsvolum kan være så stort at vi får røntgen fra deler av prøven vi egentlig ikke trodde vi fikk røntgen fra.
-Vi kan også få røntgen fra veggene i SEM’en.</p>
+<section id="elastisk-spredning">
+<h2>Elastisk spredning<a class="headerlink" href="#elastisk-spredning" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Primærelektronene <span class="math notranslate nohighlight">\(e_p\)</span> mister <em>ikke</em> energi</p></li>
+<li><p>[[BSE - Backscatter elektron | Backscatter]] (rutheford spredning)</p></li>
+<li><p>Bragg (diffraksjon)</p></li>
+</ul>
 </section>
 </section>
 
@@ -495,7 +483,7 @@ Vi kan også få røntgen fra veggene i SEM’en.</p>
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./pages"
+            path: "./tools"
         },
         predefinedOutput: true
     }
@@ -509,17 +497,17 @@ Vi kan også få røntgen fra veggene i SEM’en.</p>
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="Nye_detektorer.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="FIB-Focused_Ion_Beam.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Nye detektorer</p>
+            <p class="prev-next-title">FIB</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="SEM-_Scanne_Elektron_Mikroskop.html" title="next page">
+    <a class='right-next' id="next-link" href="Konvergensvinkel_dybdeskarphet_arbeidsavstand_EBSD.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">SEM</p>
+        <p class="prev-next-title">Konvergensvinkel</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

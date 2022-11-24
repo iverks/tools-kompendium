@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Backscatter (BSE) &#8212; Kompendium Tools</title>
+    <title>Lab &#8212; Kompendium Tools</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -50,12 +50,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Begrensinger" href="Elektronmikroskopiens_begrensinger.html" />
-    <link rel="prev" title="AFM" href="AFM-Atomic_Force_Microscopy.html" />
+    <link rel="next" title="Tilbakemeldinger prosjektrapport" href="_Prosjektrapport_tilbakemeldinger.html" />
+    <link rel="prev" title="In situ" href="TEM-In_situ.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -126,8 +124,8 @@ const thebe_selector_output = ".output, .cell_output"
    AFM
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="BSE-Backscatter_Elektron.html">
    Backscatter (BSE)
   </a>
  </li>
@@ -206,8 +204,8 @@ const thebe_selector_output = ".output, .cell_output"
    In situ
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="_Lab.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Lab
   </a>
  </li>
@@ -311,7 +309,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fpages/BSE-Backscatter_Elektron.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Ftools/_Lab.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -339,7 +337,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/pages/BSE-Backscatter_Elektron.md"
+        <a href="../_sources/tools/_Lab.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -399,22 +397,21 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#interaksjonsvolum-og-atomnummer-z">
-   Interaksjonsvolum og atomnummer
-   <span class="math notranslate nohighlight">
-    \(Z\)
-   </span>
+  <a class="reference internal nav-link" href="#recap">
+   Recap
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#backscatter-opplosning">
-   Backscatter oppløsning
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#backscatter-topografi">
-   Backscatter topografi ⛰
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#prove">
+     Prøve
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#verktoy">
+     Verktøy
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -425,7 +422,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Backscatter (BSE)</h1>
+                <h1>Lab</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -436,22 +433,21 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#interaksjonsvolum-og-atomnummer-z">
-   Interaksjonsvolum og atomnummer
-   <span class="math notranslate nohighlight">
-    \(Z\)
-   </span>
+  <a class="reference internal nav-link" href="#recap">
+   Recap
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#backscatter-opplosning">
-   Backscatter oppløsning
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#backscatter-topografi">
-   Backscatter topografi ⛰
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#prove">
+     Prøve
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#verktoy">
+     Verktøy
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -463,45 +459,49 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="backscatter-bse">
-<h1>Backscatter (BSE)<a class="headerlink" href="#backscatter-bse" title="Permalink to this headline">#</a></h1>
-<p>En effekt vi utnytter i [[SEM - _Scanne Elektron Mikroskop]]</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="lab">
+<h1>Lab<a class="headerlink" href="#lab" title="Permalink to this headline">#</a></h1>
+<p>3mm bred chip med 20 nm tykk film (man kan se gjennom den med elektroner)</p>
+<p>Dekk den med permalloy (FeNi)</p>
+<p>FiB - et mønster</p>
+<p>Se på den med de andre verktøy</p>
+<p><strong>FINN UT HVA DERE VIL LAGE</strong></p>
+<section id="recap">
+<h2>Recap<a class="headerlink" href="#recap" title="Permalink to this headline">#</a></h2>
+<section id="prove">
+<h3>Prøve<a class="headerlink" href="#prove" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(180^o\)</span> sving av <span class="math notranslate nohighlight">\(e^-\)</span></p></li>
-<li><p>Mye energi</p></li>
-<li><p>Elastisk interaksjon</p></li>
-<li><p>Rutheford spredning</p>
+<li><p>Permalloy</p></li>
+<li><p>Den er magnetisk</p></li>
+<li><p>20 nm</p></li>
+<li><p>SiN membran</p></li>
+</ul>
+</section>
+<section id="verktoy">
+<h3>Verktøy<a class="headerlink" href="#verktoy" title="Permalink to this headline">#</a></h3>
+<p><strong>FiB</strong></p>
+<ul class="simple">
+<li><p>Nanostrukturering</p>
 <ul>
-<li><p>Spredningen skjer på atomkjernen (hokus pokus kvantegreier)</p></li>
+<li><p>Fjerne materiale (milling)</p></li>
+<li><p>Deponere materiale (Pt, C, W)
+<strong>(S)TEM</strong></p></li>
 </ul>
 </li>
-<li><p>Spredningstverrsnitt <span class="math notranslate nohighlight">\(\sigma \propto Z^2\)</span> - atomnummer</p></li>
-<li><p>Tyngre atomer gir mer BSE</p></li>
-<li><p>Brukes til å se relativ atomvekt</p></li>
+<li><p>Se på krystallstruktur</p></li>
+<li><p>Se på geometri</p></li>
+<li><p>Se på magnetiske og elektriske felt</p></li>
+<li><p>Se på kjemisk komposisjon
+<strong>SEM</strong></p></li>
+<li><p>Se på topografi</p></li>
+<li><p>Se på geometri</p></li>
+<li><p>Se på kjemisk komposisjon
+<strong>AFM/MFM</strong></p></li>
+<li><p>Se på topografi (bedre enn SEMmen)</p></li>
+<li><p>(Kanskje) se på magnetiske felt</p></li>
+<li><p>(Geometri)</p></li>
 </ul>
-<section id="interaksjonsvolum-og-atomnummer-z">
-<h2>Interaksjonsvolum og atomnummer <span class="math notranslate nohighlight">\(Z\)</span><a class="headerlink" href="#interaksjonsvolum-og-atomnummer-z" title="Permalink to this headline">#</a></h2>
-<div class="math notranslate nohighlight">
-\[
-\sigma \propto Z^2
-\]</div>
-<p>Jo tyngre atomer jo mer spredning, slik som i resten av verden.</p>
-<p>Dette kommer av at <strong>mean free path</strong> blir mindre når atomkjernen blir større. Mean free path er hvor langt et elektron i snitt reiser før det kolliderer med noe.</p>
 </section>
-<section id="backscatter-opplosning">
-<h2>Backscatter oppløsning<a class="headerlink" href="#backscatter-opplosning" title="Permalink to this headline">#</a></h2>
-<p>🏖</p>
-<div class="math notranslate nohighlight">
-\[
-\lambda = \frac{h}{m\cdot v}, \delta \approx 0.61 \lambda
-\]</div>
-<p><span class="math notranslate nohighlight">\(5 kV \implies 6pm\)</span> oppløsning</p>
-</section>
-<section id="backscatter-topografi">
-<h2>Backscatter topografi ⛰<a class="headerlink" href="#backscatter-topografi" title="Permalink to this headline">#</a></h2>
-<p>Elektronene spretter den retningen topografien peker.
-Dette detekterer man og kan bruke til å bestemme prøvens topografi.</p>
-<p>Se figur.</p>
 </section>
 </section>
 
@@ -518,7 +518,7 @@ Dette detekterer man og kan bruke til å bestemme prøvens topografi.</p>
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./pages"
+            path: "./tools"
         },
         predefinedOutput: true
     }
@@ -532,17 +532,17 @@ Dette detekterer man og kan bruke til å bestemme prøvens topografi.</p>
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="AFM-Atomic_Force_Microscopy.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="TEM-In_situ.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">AFM</p>
+            <p class="prev-next-title">In situ</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="Elektronmikroskopiens_begrensinger.html" title="next page">
+    <a class='right-next' id="next-link" href="_Prosjektrapport_tilbakemeldinger.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Begrensinger</p>
+        <p class="prev-next-title">Tilbakemeldinger prosjektrapport</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

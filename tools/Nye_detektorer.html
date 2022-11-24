@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>AFM &#8212; Kompendium Tools</title>
+    <title>Nye detektorer &#8212; Kompendium Tools</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -50,10 +50,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Backscatter (BSE)" href="BSE-Backscatter_Elektron.html" />
-    <link rel="prev" title="Velkommen til NanoTools" href="Intro.html" />
+    <link rel="next" title="Sekundærelektroner" href="SE-Sekundaerelektroner.html" />
+    <link rel="prev" title="Hva er mikroskopi?" href="Mikroskopi.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -119,8 +121,8 @@ const thebe_selector_output = ".output, .cell_output"
    Velkommen til NanoTools
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="AFM-Atomic_Force_Microscopy.html">
    AFM
   </a>
  </li>
@@ -154,8 +156,8 @@ const thebe_selector_output = ".output, .cell_output"
    Hva er mikroskopi?
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Nye_detektorer.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Nye detektorer
   </a>
  </li>
@@ -309,7 +311,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fpages/AFM-Atomic_Force_Microscopy.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Ftools/Nye_detektorer.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -337,7 +339,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/pages/AFM-Atomic_Force_Microscopy.md"
+        <a href="../_sources/tools/Nye_detektorer.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -374,74 +376,23 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sammendrag">
-   Sammendrag
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#mfm-magnetic-force-microscopy">
-     MFM - Magnetic Force Microscopy
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
-    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>AFM</h1>
+                <h1>Nye detektorer</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sammendrag">
-   Sammendrag
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#mfm-magnetic-force-microscopy">
-     MFM - Magnetic Force Microscopy
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -449,21 +400,27 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="afm">
-<h1>AFM<a class="headerlink" href="#afm" title="Permalink to this headline">#</a></h1>
-<section id="sammendrag">
-<h2>Sammendrag<a class="headerlink" href="#sammendrag" title="Permalink to this headline">#</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="nye-detektorer">
+<h1>Nye detektorer<a class="headerlink" href="#nye-detektorer" title="Permalink to this headline">#</a></h1>
+<p><img alt="detektorer|300" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Direct_and_indirect_electron_detectors.svg/800px-Direct_and_indirect_electron_detectors.svg.png" /></p>
 <ul class="simple">
-<li><p>Enkelt 😎 (konseptuelt)</p></li>
-<li><p>Se topografi</p></li>
-<li><p>Bruke magnetisk cantilever -&gt; MFM 🌞</p></li>
-<li><p>Slipper vakuum 💘</p></li>
+<li><p>Gammel - Indirekte detektor</p>
+<ul>
+<li><p>Tregt</p></li>
+<li><p>Kan øvelegges</p></li>
+<li><p>Støyete</p></li>
 </ul>
-<section id="mfm-magnetic-force-microscopy">
-<h3>MFM - Magnetic Force Microscopy<a class="headerlink" href="#mfm-magnetic-force-microscopy" title="Permalink to this headline">#</a></h3>
-<p>Gjør det samme som AFM men i stedet for å måle krefter</p>
-</section>
-</section>
+</li>
+<li><p>Ny - Direkte detektor</p>
+<ul>
+<li><p>Tykt lag <span class="math notranslate nohighlight">\(500 \mu m\)</span> <span class="math notranslate nohighlight">\(Si\)</span></p></li>
+<li><p>Elektron som generere masse elektron-hull par</p></li>
+<li><p>Raskt <span class="math notranslate nohighlight">\(\approx 1ms\)</span></p></li>
+<li><p>Null støy</p></li>
+<li><p>Resistent</p></li>
+</ul>
+</li>
+</ul>
 </section>
 
     <script type="text/x-thebe-config">
@@ -479,7 +436,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./pages"
+            path: "./tools"
         },
         predefinedOutput: true
     }
@@ -493,17 +450,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="Intro.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="Mikroskopi.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Velkommen til NanoTools</p>
+            <p class="prev-next-title">Hva er mikroskopi?</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="BSE-Backscatter_Elektron.html" title="next page">
+    <a class='right-next' id="next-link" href="SE-Sekundaerelektroner.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Backscatter (BSE)</p>
+        <p class="prev-next-title">Sekundærelektroner</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
