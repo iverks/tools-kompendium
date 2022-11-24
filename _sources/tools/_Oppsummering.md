@@ -115,7 +115,7 @@ Samme som SEM men en galliumkanon i tilelg.
 #### SEM og FIB
 
 SETT INN BILDER FRA "Konvergensvinkel pluss mer"
-![konvergensvinkel](../images/Konvergensvinkel%20pluss%20mer/Konvergensvinkel%20pluss%20mer%20-%20page%201.svg)
+![konvergensvinkel](../images/Konvergensvinkel%20pluss%20mer/Konvergensvinkel%20pluss%20mer%20-%20page%201.png)
 
 - Konvergensvinkel $\alpha$
 	- Hvor "spiss" elektronstrålen er.
