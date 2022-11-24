@@ -5,6 +5,7 @@ format: jb-book
 root: intro
 chapters:
   - file: tools/Intro
+  - file: tools/_Oppsummering
   - file: tools/AFM-Atomic_Force_Microscopy
   - file: tools/BSE-Backscatter_Elektron
   - file: tools/Elektronmikroskopiens_begrensinger
