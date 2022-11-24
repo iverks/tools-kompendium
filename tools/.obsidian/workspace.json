@@ -1,0 +1,164 @@
+{
+  "main": {
+    "id": "79139ec7234daf6c",
+    "type": "split",
+    "children": [
+      {
+        "id": "c7c5900191e1a617",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1ff1d41358198b1c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_Oppsummering.md",
+                "mode": "source",
+                "source": true
+              }
+            },
+            "group": "d88d3d25b9d78343"
+          }
+        ]
+      },
+      {
+        "id": "458b103173023ebf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "00d71e615e552cc1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_Oppsummering.md",
+                "mode": "preview",
+                "source": true
+              }
+            },
+            "group": "d88d3d25b9d78343"
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "63cdf927548a2a22",
+    "type": "split",
+    "children": [
+      {
+        "id": "ba8a9c14904d5361",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ce3eef0d40ab57a5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "78e6553e6c6e7eed",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "14cd592500fac38a",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e3c4bf5851e3da35",
+    "type": "split",
+    "children": [
+      {
+        "id": "318fca8fe6ed36a2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d1990c43145a7a2d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_Oppsummering.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2d7014b2770b7e4d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "_Oppsummering.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "cfe658b9ee478025",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "9578826e5380b429",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_Oppsummering.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "1ff1d41358198b1c",
+  "lastOpenFiles": [
+    "SEM-Semmens_oppbyggning.md",
+    "_Oppsummering.md"
+  ]
+}
