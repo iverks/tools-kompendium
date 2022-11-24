@@ -144,11 +144,102 @@ SETT INN BILDER FRA "Konvergensvinkel pluss mer"
 
 ### SEM
 
+#### Signaler/bildekontrast
+
 - Backscatter elektroner
 	- relativt atomnummer
 - Sekundærelektroner
 	- Overflate og topografi
+	- Flere enn BSE fordi det ikke er avhengig av at elektronene går inn i materialet
 - EDS
 	- Kjemisk komposisjon og hvilke grunnstoffer
 - EBSD - Electron BackScatter Diffraction
 	- krystallstruktur
+
+SETT INN FIGUR FRA "Backscatter elektron" eller lag en ny bedre figur som inkluderer SE, BSE, EDS
+![interaksjonsvolumets signaler](https://www.nanoimages.com//wp-content/uploads/sem_img6.png)
+
+SE - overflaten  
+BSE + EBSD - øverste andel av interaksjonsvolum  
+EDS - Hele interaksjonsvolum
+
+#### SEM interaksjonsvolum
+
+- **Viktig**
+- Fysiske grensen for oppløsning
+- Større akselerasjonsspenning -> større interaksjonsvolum
+- Tyngre materiale -> mindre interaksjonsvolum
+
+### STEM 
+
+#### Signaler/bildekontrast
+
+- BF - Bright field
+- EELS - Energy electron loss spectroscopy
+	- kjemisk komposisjon
+	- elektronsstrktur
+	- båndgap
+	- oksidasjonstall
+- ADF - Annular dark field
+- HAADF - High angle annular dark field
+	- Z-kontrast (relativt atomnummer)
+- EDS - Energy dispersive x-ray spectroscopy
+	- Kjemisk komposisjon
+- SED - Scanning electron diffraction
+	- Krystallstruktur
+- DPC - Differential phase contrast
+	- Funksjonelle egenskaper
+	- Dvs magnetiske og elektriske felt
+
+#### Interaksjonsvolum
+
+- Tykkelsen er under 100 nm
+- Dermed får vi et lite interaksjonsvolum
+- Vi kan få atomæroppløsning
+
+> Dag Werner Breiby er diffraksjonsmesteren
+> -Magnus Nord (parafrasert)
+
+
+### FIB - Bruksområder
+
+#### Grave og kutte
+
+> Det er en gravemaskin... Nanogravemaskin!
+
+```
+  \  /
+   \/   Ga+
+___   ___
+   |_|     Prøve
+```
+
+- Skyter $Ga^+$ på materiale
+	- Fjerne materiale
+
+#### Deponering
+
+1. Blåser gass på prøven.
+2. Skyter $Ga^+$ på prøven og gassen slik at gassen deponeres på prøven.
+
+### Prøvebegrensninger
+
+- Største problem: Vakuum
+	- Ikke væsker
+	- Ikke levende celler
+		- De dør 💀
+- Stråleskade
+	- Høy-energi elektroner
+	- Nesten lysets hastighet ⚡
+- Oppladning
+	- Man bør ha ledende prøver, hvis ikke bygger det seg ladninger på dem
+- Biologiske prøver er mulig men trenger spesiell prøvepreparering
+
+### Sammenligning av instrumenter
+
+|  Verktøy | Oppløsning | Pris | Vakuum | Nødvendig Trening | Veldig tynn prøve |
+| --- | --- | --- | --- | --- | --- |
+| SEM | nm| lav-medium| Ja| Lite | Nei |
+| FIB | nm| medium-høy| Ja| Medium | Nei |
+| TEM | Å| medium-veldig høy| Veldig ja | Mye | Jeppsi pepsi |
+| AFM | nm| lav-medium| Nei | Lite | Nei |
